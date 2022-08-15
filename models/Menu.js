@@ -7,13 +7,4 @@ const Menu = db.define('Menu', {
     },
 })
 
-async function main(){
-    await Menu.sync({force: true})
-
-    await Menu.create({
-        title: 'saver menu',
-    })
-}
-
-main()
 module.exports = {Menu};
